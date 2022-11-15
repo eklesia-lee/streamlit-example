@@ -14,6 +14,9 @@ add_selectbox = st.sidebar.selectbox(
     ("Email", "Home phone", "Mobile phone")
 )
 
+color = st.select_slider(
+    'Select a color of the rainbow',
+    options=['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'])
 
 
 with st.echo(code_location='below'):
