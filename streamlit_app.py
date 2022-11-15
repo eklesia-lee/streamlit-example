@@ -14,9 +14,11 @@ add_selectbox = st.sidebar.selectbox(
     ("Email", "Home phone", "Mobile phone")
 )
 
-color = st.select_slider(
-    'Select a color of the rainbow',
-    options=['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'])
+
+
+with st.sidebar:
+    base_wt = st.number_input('체종')
+st.write('현재 체중은... ', number)
 
 
 with st.echo(code_location='below'):
