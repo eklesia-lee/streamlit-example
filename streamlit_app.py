@@ -17,7 +17,7 @@ add_selectbox = st.sidebar.selectbox(
 
 
 with st.sidebar:
-    base_wt = st.number_input('체종')
+    base_wt = st.number_input('체중')
 
 
 
