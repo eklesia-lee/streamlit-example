@@ -18,9 +18,11 @@ add_selectbox = st.sidebar.selectbox(
 
 with st.sidebar:
     base_wt = st.number_input('체종')
-st.write('현재 체중은... ', number)
 
 
+
+st.write(base_wt *100)
+    
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
